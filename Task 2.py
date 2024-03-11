@@ -30,11 +30,11 @@ def bfs(graph, start):
     visited, queue = {start}, [start]
     path = []
     while queue:
-        vertex = queue. pop (0)
+        vertex = queue.pop(0)
         for neighbour in graph[vertex]:
             if neighbour not in visited:
-                visited.add (neighbour)
-                queue.append (neighbour)
+                visited.add(neighbour)
+                queue.append(neighbour)
                 path.append((vertex, neighbour))
     return path
 
